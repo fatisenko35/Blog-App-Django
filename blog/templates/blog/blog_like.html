@@ -1,0 +1,12 @@
+<div>
+    {% if liked %}
+    <a href="{% url 'like' blog.id %}"><i class="fa-solid fa-heart mx-1" style="font-size: 2rem" aria-hidden="true"></i
+    ></a>
+    <p class="text-center" >{{likes_count}}</p>
+    
+    {% else %} 
+    <a href="{% url 'like' blog.id %}"><i class="fa-regular fa-heart mx-1" style="font-size: 2rem" aria-hidden="true"></i
+    ></a>
+    <p class="text-center" >{{likes_count}}</p>
+    {% endif %}
+</div>

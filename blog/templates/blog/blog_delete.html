@@ -1,0 +1,9 @@
+
+    <form action="{% url 'delete' blog.id %}" method="post" style="display:inline-block">
+        {% csrf_token %}
+        
+        <input type="submit" value="Delete" class="btn btn-primary"/>
+    </form>
+    
+
+    

@@ -1,0 +1,17 @@
+
+<form action="" method="post" class="my-3">
+  {{form}} {% csrf_token %}
+  <input type="submit" class="btn btn-primary" value="add" />
+</form>
+
+<script>
+  const authorLabel = document.querySelectorAll('label[for="ad"]')[0];
+  authorLabel.style.display = "none";
+  const user = "{{ user.username }}";
+  const author = document.getElementById("ad");
+  for (item of author) {
+    item.innerText == user ? (item.selected = true) : (item.selected = false);
+  }
+</script>
+
+
